@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="langage web" />
+    <meta name="keywords" content="html, css, ftp" />
+    <meta name="author" content="TORRES Lucas" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Les grands vins de Touraine</title>
+  </head>
+  <body>
+    <header>
+      <h1>Les grands vins de Touraine</h1>
+      <!-- usage de la balise <center> qui est interdite juste pour la visualisation-->
+
+      <hr />
+      <!-- Pour la ligne en gras -->
+      <blockquote>
+        - Qu'est-ce que vous regardez ? C'est la carte routière ?<br />
+
+        - Non ! C'est la carte des vins. C'est pour éviter les bouchons !<br />
+
+        - Fernand Reynaud <u> Raymond Devos </u>
+      </blockquote>
+      <!--Soulignage et barrag du texte de l'auteur-->
+      <h2>Localisation des vins de Touraine</h2>
+      <img
+        src="Images/Cartes/cartetouraine.jpg"
+        alt="image d'une carte de vin"
+        title="Carte Touraine"
+        usemap="#MapFix"
+      />
+      <map name="MapFix" id="MapFix">
+        <area
+          shape="circle"
+          coords="290,59,15"
+          href="#Vouvray"
+          alt="Nom de la ville"
+        />
+        <area
+          shape="rect"
+          coords="228,79,270,100"
+          href="#Chinon"
+          alt="Nom de la ville"
+        />
+        <area
+          shape="poly"
+          coords="226,77,248,78,247,58,211,56,212,87,225,89"
+          href="#Bourgeuil"
+          alt="Nom de la ville"
+        />
+      </map>
+      <!-- Ajout du css dans le code pour créer la séparation du titre-->
+      <section>
+        <p>Carte des vins de Touraine</p>
+      </section>
+      <ul>
+        <li><a href="#Bourgeuil"> Bourgueil </a></li>
+        <li><a href="#Chinon"> Chinon </a></li>
+        <li>
+          <a href="#Vouvray"> Vouvray </a>
+          <ul start="1">
+            <li>Demi-Sec</li>
+            <li>Brut</li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <h2>Présentation des appellations</h2>
+
+      <h3 id="Bourgeuil">Bourgueil</h3>
+
+      <section>
+        <em>Friand et plaisant ou structuré et puissant</em> : deux
+        personnalités de Bourgueil pour exprimer dans votre verre ses deux
+        grands terroirs. Rabelais disait à son sujet, dans Gargantua, “Beuvez
+        tousjours, vous ne mourrez jamais
+      </section>
+
+      <article>
+        <h4>Localisation</h4>
+        <section>
+          L'aire d'appellation s'étend sur <strong>7 communes.</strong> A cet
+          endroit, la vallée de la Loire est composée de sols variés, depuis les
+          alluvions près du fleuve jusqu'aux sols argilo- calcaires proches de
+          la côte de
+          <a href="#Tuffeau">tuffeau </a>
+        </section>
+      </article>
+      <figure>
+        <img
+          src="Images/Cartes/cartebourgueil.jpg"
+          alt="image d'une carte de vin"
+        />
+        <figcaption><h4>Superficie : 1 400 ha</h4></figcaption>
+      </figure>
+
+      <h3 id="Chinon">Chinon</h3>
+      <p>
+        Capitale de la Rabelaisie et du tourisme
+        <a href="#Bachique">Bachique </a>, Chinon fête ses grands vins rouges
+        tout en faisant tinter ses verres de rosé et de blanc.
+      </p>
+
+      <h4>Localisation</h4>
+
+      <section>
+        L'aire d'appellation s'étend sur <strong>19 communes,</strong> de part
+        et d'autre de la Vienne jusqu'à sa confluence avec la Loire.
+      </section>
+      <img src="Images/Cartes/cartechinon.jpg" alt="image d'une carte de vin" />
+
+      <h4>Superficie : 2 300 ha</h4>
+      <h3 id="Vouvray">Vouvray</h3>
+
+      <section>
+        Secs, tendres, mœlleux ou Fines bulles, les blancs de Vouvray vous
+        révèlent leur exceptionnelle diversité.
+      </section>
+      <h2>Localisation</h2>
+      <section>
+        L'aire d'appellation s'ouvre aux limites Est de l'agglomération
+        tourangelle et s'étend sur <strong>7 commune</strong> de la rive droite
+        de la Loire et en bordure de son affluent, la Brenne.
+      </section>
+
+      
+        <img
+          src="Images/Cartes/cartevouvray.jpg"
+          alt="image d'une carte de vin"
+        />
+           
+        <h4>Superficie : 2 000 ha</h4>
+        <aside class="glossaire">
+        <h4>Glossaire</h4>
+
+        <dl>
+          <dt id="Bachique">Bachique</dt>
+          <dd>Relatif à Bacchus</dd>
+          <dt id="Tuffeau">tuffeau</dt>
+          <dd>Roche calcaire poreuse</dd>
+        </dl>
+      </aside>
+
+        <h4>Classement des vins</h4>
+
+        <table>
+          <caption>
+            Millésimes des vins de Touraine
+          </caption>
+          <tr>
+            <th></th>
+            <!-- Case blanche pour obtenir l'espace-->
+            <th></th>
+            <th>2012</th>
+            <th>2013</th>
+            <th>2014</th>
+            <th>2015</th>
+          </tr>
+
+          <tr>
+            <td colspan="2">Rouge</td>
+            <td>15</td>
+            <td>18</td>
+            <td>14</td>
+            <td>17</td>
+          </tr>
+
+          <tr>
+            <td colspan="2">Blanc</td>
+            <td>12</td>
+            <td>14</td>
+            <td>15</td>
+            <td>15</td>
+          </tr>
+
+          <tr>
+            <td colspan="2">Qualité</td>
+            <td>
+              <img
+                src="Images/Cartes/star.jpg"
+                alt="image d'une étoile"
+                title="Star"
+                width="15"
+                height="15"
+              />
+            </td>
+            <td>
+              <img
+                src="Images/Cartes/star.jpg"
+                alt="image d'une étoile"
+                title="Star"
+                width="15"
+                height="15"
+              />
+            </td>
+            <td>
+              <img
+                src="Images/Cartes/star.jpg"
+                alt="image d'une étoile"
+                title="Star"
+                width="15"
+                height="15"
+              />
+            </td>
+            <td>
+              <img
+                src="Images/Cartes/star.jpg"
+                alt="image d'une étoile"
+                title="Star"
+                width="15"
+                height="15"
+              />
+            </td>
+            <td>
+              <img
+                src="Images/Cartes/star.jpg"
+                alt="image d'une étoile"
+                title="Star"
+                width="15"
+                height="15"
+              />
+            </td>
+          </tr>
+        </table>
+        <video
+          src="Videos/vendanges.mp4"
+          autoplay="autoplay"
+          controls="controls"
+          preload="auto"
+          width="640"
+          height="480"
+        ></video>
+        <!-- usage d'une balise interdite pour la visualisation du footer-->
+      </aside>
+    </main>
+
+    <footer>
+      <h4>Liens</h4>
+      <nav>
+        <a href="vins_nantais.html">Les vins du Pays Nantais</a> -
+        <a href="vins_anjou.html">Les vins d'Anjou de Saumur</a>
+        <a href="vins_centre.html">Les vins du Centre</a>
+      </nav>
+      <img src="Images/fleche.gif" alt="image d'une flèche" />
+      <p>Page réalisée par Lucas Torres le 5 septembre 2023</p>
+      <hr />
+      <p>
+        Pour contacter le webmaster :
+        <a href="mailto:lucas.torres.otw@gmail.com">
+          Ecrivez-moi si vous avez une question !
+        </a>
+      </p>
+      <p>
+        Page sponsorisé par
+        <a href="https://www.lacavedacote.com"> La cave de Perros Guirrec</a>
+      </p>
+    </footer>
+  </body>
+
+  <script src="../jquery-3.6.0.min.js"></script>
+  <script src="../date-touraine.js"></script>
+  <script src="../verif.js"></script>
+</html>
