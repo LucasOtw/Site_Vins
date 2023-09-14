@@ -6,9 +6,9 @@ body {
     color: #d2691e;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #ed9c62;
-    background-image: url(Images/bouteille.png) no-repeat ;
-    float : left;
-    width: 70%;
+    background-image: url(Images/bouteille.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
     margin-left: auto ;
     margin-right: auto ;
     
@@ -100,9 +100,13 @@ h3 {
     font-weight: bold;
     text-align: center;                         /* A faire un par un probleme de border-box  il faut mettre les noms de villes en h3*/
     border: 3px #a52a2a double;
-    background-image: url(Images/mini_bouteille.png) no-repeat left 600px 40px;      
+    background-image: url(Images/mini_bouteille.png);
+    background-repeat: no-repeat;      
     margin:20px auto;
-    padding:12 O;
+    padding-top: 12px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;;
 }
 
 /* Définition titres de niveau 3 et 4 et les termes définis au niveau du glossaire */
@@ -140,6 +144,13 @@ h4, .glossaire {
 /* marge externe de 20 pixels en haut et de 70% à droite */
 
 
+.vinrouge {
+    background-color: #ffaeb9;
+}
+
+.vinblanc {
+    background-color:#ff9;
+}
 /* Définition classe vinrouge */
 /* fond de couleur ffaeb9 */
 /* Définition classe vinblanc*/
